@@ -1,6 +1,5 @@
 <?php 
 //1 find prime number
-
 function prime($val){
     $flag= 0;
     for($i=2;$i<=$val/2;$i++){
@@ -23,7 +22,6 @@ prime(2);
 
 echo '<br>';
 //2 find perfect number
-
 function perfectNumber($val){
     $sum=0;
     for($i=1;$i<=$val/2; $i++){
@@ -38,7 +36,6 @@ perfectNumber(6);
 
 
 echo '<br>';
-
 //3. find even or odd
 $arr=[8,7,5,3,2,1];
 function isEven($arr=[]){
@@ -54,10 +51,7 @@ isEven($arr);
 
 
 echo '<br>';
-
-
 //4 armtrong number 
-
 function isArmstrong($val){
     $sum=0;
     $temp=$val;
@@ -67,7 +61,6 @@ function isArmstrong($val){
         $sum = $sum + pow($reminder, $powerof);
         $temp = $temp/10;
     }
-
     if($val  == $sum){
         echo $val.'is a armstrong number';
     } else{
@@ -78,9 +71,7 @@ isArmstrong(153);
 
 
 echo '<br>';
-
 //5. factorial
-
 function factorial($val){
     if($val==0){
         return 1;
@@ -90,8 +81,8 @@ function factorial($val){
 }
 echo 'factorial of 5->'.factorial(5);
 
-echo '<br>';
 
+echo '<br>';
 //6. fibonacci series
 function febonaci($val, $a=0, $b=1){
     $c=0;
@@ -102,7 +93,6 @@ function febonaci($val, $a=0, $b=1){
         $b=$c;
         echo $c.' ';
     }
-
 }
 febonaci(5);
 
