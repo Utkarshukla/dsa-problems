@@ -125,3 +125,19 @@ function palindrome($val){
     }
 }
 palindrome(121);
+
+
+
+echo '<br>';
+//8 swap number without 3rd variable 
+function swop($a,$b){
+    $a= $a+$b;
+    $b=$a-$b;
+    $a=$a-$b;
+    echo $a.' '.$b;
+}
+swop(20,10);
+
+
+echo '<br>';
+//9
